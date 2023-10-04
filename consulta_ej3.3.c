@@ -62,7 +62,7 @@ int main(int argc, char **argv)
 	
 	else
 		while (row !=NULL) {
-			printf ("ID: %d\n", row[0]);
+			printf ("ID: %d\n", atoi(row[0]));
 			// obtenemos la siguiente fila
 			row = mysql_fetch_row (resultado);
 	}
